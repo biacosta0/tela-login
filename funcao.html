@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Validação de Campos de Acesso</title>
+</head>
+<body>
+    <h2>Formulário de Acesso</h2>
+    <form onsubmit="return validarFormulario()">
+        <label for="usuario">Usuário:</label><br>
+        <input type="text" id="usuario" name="usuario"><br><br>
+        
+        <label for="senha">Senha:</label><br>
+        <input type="password" id="senha" name="senha"><br><br>
+        
+        <input type="submit" value="Entrar">
+    </form>
+
+    <p><a href="#" onclick="recuperarSenha()">Esqueci minha senha</a></p>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
