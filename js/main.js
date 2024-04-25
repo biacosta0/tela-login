@@ -1,13 +1,14 @@
 // Função para verificar preenchimento de formulário
 function validarFormulario() {
-    var usuario = document.getElementById("usuario").value;
-    var senha = document.getElementById("senha").value;
+    var email   = document.getElementById("email").value;
+    var senha     = document.getElementById("senha").value;
 
-    if (usuario == "" || senha == "") {
+    if (email == "" || senha == "") {
         alert("Por favor, preencha todos os campos obrigatórios.");
-        return false;
+    } else{
+        window.location.href = "../xtela-login/inicio.html";
     }
-    return true;
+    
 }
 
 
